@@ -1,0 +1,12 @@
+2023-02-06 18:36:45 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "T_SENSITIVEWORD" not found; SQL statement:
+select `_word` from t_sensitiveword order by `id` desc [42102-197]
+2023-02-06 18:37:10 jdbc[4]: exception
+org.h2.jdbc.JdbcSQLException: Table "T_SENSITIVEWORD" not found; SQL statement:
+select `_word` from t_sensitiveword order by `id` desc [42102-197]
+2023-02-06 18:37:41 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "T_SENSITIVEWORD" not found; SQL statement:
+select `_word` from t_sensitiveword order by `id` desc [42102-197]
+2023-02-06 18:40:38 jdbc[4]: exception
+org.h2.jdbc.JdbcSQLException: Table "T_SENSITIVEWORD" not found; SQL statement:
+select `_word` from t_sensitiveword order by `id` desc [42102-197]
