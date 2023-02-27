@@ -10,6 +10,9 @@
     <network>
         <join>
             <multicast enabled="false"/>
+            <tcp-ip enabled="true">
+                <members>192.168.0.*</members>
+            </tcp-ip>
         </join>
     </network>
 

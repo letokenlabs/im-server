@@ -18,7 +18,7 @@
         <!--MySQL数据库驱动程序-->
         <property name="driverClass">com.mysql.cj.jdbc.Driver</property>
         <!--MySQL数据库地址-->
-        <property name="jdbcUrl">jdbc:mysql://192.168.0.46:3306/wfchat?verifyServerCertificate=false&amp;useSSL=false&amp;serverTimezone=GMT%2B8&amp;allowPublicKeyRetrieval=true&amp;useUnicode=true&amp;characterEncoding=UTF-8</property>
+        <property name="jdbcUrl">jdbc:mysql://192.168.0.46:13306/wfchat?verifyServerCertificate=false&amp;useSSL=false&amp;serverTimezone=GMT%2B8&amp;allowPublicKeyRetrieval=true&amp;useUnicode=true&amp;characterEncoding=UTF-8</property>
         <!--MySQL数据库用户名-->
         <property name="user">root</property>
         <!--MySQL数据库密码-->
