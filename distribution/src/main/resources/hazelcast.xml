@@ -7,7 +7,7 @@
         <join>
             <multicast enabled="false"/>
             <tcp-ip enabled="true">
-                <members>192.168.0.*</members>
+                <members>192.168.0.100,192.168.0.46</members>
             </tcp-ip>
         </join>
     </network>
