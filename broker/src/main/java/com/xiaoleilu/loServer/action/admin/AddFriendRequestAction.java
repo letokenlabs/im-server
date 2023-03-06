@@ -12,7 +12,7 @@ import cn.wildfirechat.common.APIPath;
 import cn.wildfirechat.common.ErrorCode;
 import cn.wildfirechat.pojos.InputAddFriendRequest;
 import cn.wildfirechat.proto.WFCMessage;
-import com.hazelcast.util.StringUtil;
+import com.hazelcast.internal.util.StringUtil;
 import com.xiaoleilu.loServer.annotation.HttpMethod;
 import com.xiaoleilu.loServer.annotation.Route;
 import com.xiaoleilu.loServer.handler.Request;

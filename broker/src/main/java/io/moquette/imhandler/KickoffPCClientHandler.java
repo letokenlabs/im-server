@@ -12,7 +12,7 @@ import cn.wildfirechat.common.ErrorCode;
 import cn.wildfirechat.pojos.GroupNotificationBinaryContent;
 import cn.wildfirechat.proto.ProtoConstants;
 import cn.wildfirechat.proto.WFCMessage;
-import com.hazelcast.util.StringUtil;
+import com.hazelcast.internal.util.StringUtil;
 import io.moquette.spi.impl.Qos1PublishHandler;
 import io.netty.buffer.ByteBuf;
 

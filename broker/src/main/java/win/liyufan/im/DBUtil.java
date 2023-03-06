@@ -19,7 +19,7 @@ import java.util.Calendar;
 import java.util.Date;
 import java.util.List;
 
-import com.hazelcast.util.StringUtil;
+import com.hazelcast.internal.util.StringUtil;
 import com.mchange.v2.c3p0.ComboPooledDataSource;
 import io.moquette.BrokerConstants;
 import io.moquette.server.config.IConfig;

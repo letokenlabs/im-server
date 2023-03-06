@@ -21,7 +21,7 @@ import cn.wildfirechat.pojos.UserOnlineStatus;
 import cn.wildfirechat.proto.ProtoConstants;
 import cn.wildfirechat.proto.WFCMessage;
 import com.google.gson.Gson;
-import com.hazelcast.util.StringUtil;
+import com.hazelcast.internal.util.StringUtil;
 import io.moquette.BrokerConstants;
 import io.moquette.persistence.ServerAPIHelper;
 import io.moquette.interception.InterceptHandler;
@@ -174,7 +174,7 @@ public class ProtocolProcessor {
         mServer = server;
 
         String onlineStatusCallback = server.getConfig().getProperty(BrokerConstants.USER_ONLINE_STATUS_CALLBACK);
-        if (!com.hazelcast.util.StringUtil.isNullOrEmpty(onlineStatusCallback)) {
+        if (!com.hazelcast.internal.util.StringUtil.isNullOrEmpty(onlineStatusCallback)) {
             mUserOnlineStatusCallback = onlineStatusCallback;
         }
     }

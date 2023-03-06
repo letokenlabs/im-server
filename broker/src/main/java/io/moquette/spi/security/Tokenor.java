@@ -1,7 +1,7 @@
 package io.moquette.spi.security;
 
 
-import com.hazelcast.util.StringUtil;
+import com.hazelcast.internal.util.StringUtil;
 import io.moquette.spi.impl.security.AES;
 
 public class Tokenor {

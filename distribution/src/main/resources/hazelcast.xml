@@ -1,13 +1,15 @@
 <hazelcast
-        xsi:schemaLocation="http://www.hazelcast.com/schema/config
-  http://www.hazelcast.com/schema/config/hazelcast-config-3.5.xsd"
-        xmlns="http://www.hazelcast.com/schema/config"
-        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    xsi:schemaLocation="http://www.hazelcast.com/schema/config
+  http://www.hazelcast.com/schema/config/hazelcast-config-5.2.xsd"
+    xmlns="http://www.hazelcast.com/schema/config"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <cluster-name>dev</cluster-name>
     <network>
         <join>
-            <multicast enabled="false"/>
+            <multicast enabled="false">
+            </multicast>
             <tcp-ip enabled="true">
-                <members>192.168.0.100,192.168.0.46</members>
+                <members>192.168.1.46,192.168.1.100</members>
             </tcp-ip>
         </join>
     </network>
@@ -21,9 +23,7 @@
     <map name="messages_map">
         <!-- 7 days -->
         <time-to-live-seconds>604800</time-to-live-seconds>
-        <eviction-policy>LRU</eviction-policy>
-        <max-size policy="PER_NODE">1000000</max-size>
-        <eviction-percentage>10</eviction-percentage>
+        <eviction eviction-policy="LRU" max-size-policy="PER_NODE" size="1000000"/>
         <map-store enabled="true">
             <class-name>io.moquette.persistence.MessageLoader</class-name>
             <write-delay-seconds>0</write-delay-seconds>
@@ -33,9 +33,7 @@
     <map name="groups_map">
         <!-- 7 days -->
         <time-to-live-seconds>604800</time-to-live-seconds>
-        <eviction-policy>LRU</eviction-policy>
-        <max-size policy="PER_NODE">1000000</max-size>
-        <eviction-percentage>10</eviction-percentage>
+        <eviction eviction-policy="LRU" max-size-policy="PER_NODE" size="1000000"/>
         <map-store enabled="true">
             <class-name>io.moquette.persistence.GroupLoader</class-name>
             <write-delay-seconds>0</write-delay-seconds>
@@ -44,9 +42,7 @@
 
     <map name="users">
         <time-to-live-seconds>604800</time-to-live-seconds>
-        <eviction-policy>LRU</eviction-policy>
-        <max-size policy="PER_NODE">1000000</max-size>
-        <eviction-percentage>10</eviction-percentage>
+        <eviction eviction-policy="LRU" max-size-policy="PER_NODE" size="1000000"/>
         <map-store enabled="true">
             <class-name>io.moquette.persistence.UserLoader</class-name>
             <write-delay-seconds>0</write-delay-seconds>
@@ -55,9 +51,7 @@
 
     <map name="user_status">
         <time-to-live-seconds>604800</time-to-live-seconds>
-        <eviction-policy>LRU</eviction-policy>
-        <max-size policy="PER_NODE">1000000</max-size>
-        <eviction-percentage>10</eviction-percentage>
+        <eviction eviction-policy="LRU" max-size-policy="PER_NODE" size="1000000"/>
         <map-store enabled="true">
             <class-name>io.moquette.persistence.UserStatusLoader</class-name>
             <write-delay-seconds>0</write-delay-seconds>
@@ -66,9 +60,7 @@
 
     <map name="user_friends_empty">
         <time-to-live-seconds>86400</time-to-live-seconds>
-        <eviction-policy>LRU</eviction-policy>
-        <max-size policy="PER_NODE">1000000</max-size>
-        <eviction-percentage>10</eviction-percentage>
+        <eviction eviction-policy="LRU" max-size-policy="PER_NODE" size="1000000"/>
     </map>
 
     <set name="node_ids"/>
@@ -81,7 +73,7 @@
 
     <map name="chatrooms">
         <time-to-live-seconds>604800</time-to-live-seconds>
-        <eviction-policy>LRU</eviction-policy>
+        <eviction eviction-policy="LRU" max-size-policy="PER_NODE" size="0"/>
         <map-store enabled="true">
             <class-name>io.moquette.persistence.ChatroomLoader</class-name>
             <write-delay-seconds>0</write-delay-seconds>
@@ -100,9 +92,10 @@
     <map name="robots">
         <!-- 7 days -->
         <time-to-live-seconds>604800</time-to-live-seconds>
-        <eviction-policy>LRU</eviction-policy>
-        <max-size policy="PER_NODE">1000000</max-size>
-        <eviction-percentage>10</eviction-percentage>
+        <eviction eviction-policy="LRU" max-size-policy="PER_NODE" size="1000000"/>
+        <!--        <eviction-policy>LRU</eviction-policy>-->
+        <!--        <max-size policy="PER_NODE">1000000</max-size>-->
+        <!--        <eviction-percentage>10</eviction-percentage>-->
         <map-store enabled="true">
             <class-name>io.moquette.persistence.RobotLoader</class-name>
             <write-delay-seconds>0</write-delay-seconds>
@@ -112,9 +105,7 @@
     <map name="devices">
         <!-- 7 days -->
         <time-to-live-seconds>604800</time-to-live-seconds>
-        <eviction-policy>LRU</eviction-policy>
-        <max-size policy="PER_NODE">1000000</max-size>
-        <eviction-percentage>10</eviction-percentage>
+        <eviction eviction-policy="LRU" max-size-policy="PER_NODE" size="1000000"/>
         <map-store enabled="true">
             <class-name>io.moquette.persistence.DeviceLoader</class-name>
             <write-delay-seconds>0</write-delay-seconds>
@@ -141,9 +132,7 @@
     <map name="channels_map">
         <!-- 7 days -->
         <time-to-live-seconds>604800</time-to-live-seconds>
-        <eviction-policy>LRU</eviction-policy>
-        <max-size policy="PER_NODE">1000000</max-size>
-        <eviction-percentage>10</eviction-percentage>
+        <eviction eviction-policy="LRU" max-size-policy="PER_NODE" size="1000000"/>
         <map-store enabled="true">
             <class-name>io.moquette.persistence.ChannelLoader</class-name>
             <write-delay-seconds>0</write-delay-seconds>

@@ -8,7 +8,7 @@
 
 package io.moquette.persistence;
 
-import com.hazelcast.core.MapStore;
+import com.hazelcast.map.MapStore;;
 import io.moquette.server.Server;
 import win.liyufan.im.MessageBundle;
 

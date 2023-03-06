@@ -10,7 +10,7 @@ package io.moquette.imhandler;
 
 import cn.wildfirechat.proto.ProtoConstants;
 import cn.wildfirechat.proto.WFCMessage;
-import com.hazelcast.core.Member;
+//import com.hazelcast.core.Member;
 import io.moquette.persistence.MemorySessionStore;
 import io.moquette.spi.ClientSession;
 import io.moquette.spi.impl.Qos1PublishHandler;

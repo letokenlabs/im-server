@@ -11,7 +11,7 @@ package io.moquette.imhandler;
 import cn.wildfirechat.common.ErrorCode;
 import cn.wildfirechat.proto.ProtoConstants;
 import cn.wildfirechat.proto.WFCMessage;
-import com.hazelcast.util.StringUtil;
+import com.hazelcast.internal.util.StringUtil;
 import io.moquette.BrokerConstants;
 import io.moquette.server.Server;
 import io.moquette.spi.impl.Qos1PublishHandler;

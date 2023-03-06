@@ -9,8 +9,7 @@
 package io.moquette.persistence;
 
 import cn.wildfirechat.proto.WFCMessage;
-import com.hazelcast.core.MapLoader;
-import com.hazelcast.core.MapStore;
+import com.hazelcast.map.MapStore;;
 import io.moquette.server.Server;
 
 import java.util.Collection;

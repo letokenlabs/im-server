@@ -23,7 +23,7 @@ import cn.wildfirechat.proto.WFCMessage;
 import cn.wildfirechat.push.PushServer;
 import com.google.gson.Gson;
 import com.hazelcast.core.HazelcastInstance;
-import com.hazelcast.util.StringUtil;
+import com.hazelcast.internal.util.StringUtil;
 import cn.wildfirechat.pojos.OutputNotifyChannelSubscribeStatus;
 import com.xiaoleilu.loServer.model.FriendData;
 import io.moquette.persistence.*;

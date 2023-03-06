@@ -10,7 +10,7 @@ package win.liyufan.im;
 
 import cn.wildfirechat.common.IMExceptionEvent;
 import com.google.gson.Gson;
-import com.hazelcast.util.StringUtil;
+import com.hazelcast.internal.util.StringUtil;
 import io.moquette.server.Server;
 import org.slf4j.Logger;
 
