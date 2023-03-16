@@ -8,8 +8,8 @@
         <join>
             <multicast enabled="false">
             </multicast>
-            <tcp-ip enabled="true">
-                <members>192.168.1.46,192.168.1.100</members>
+            <tcp-ip enabled="false">
+                <members>192.168.0.46</members>
             </tcp-ip>
         </join>
     </network>

@@ -122,6 +122,7 @@ public class SendMessageHandler extends IMHandler<WFCMessage.Message> {
 
     @Override
     public ErrorCode action(ByteBuf ackPayload, String clientID, String fromUser, ProtoConstants.RequestSourceType requestSourceType, WFCMessage.Message message, Qos1PublishHandler.IMCallback callback) {
+        LOG.info("发送消息------------------------------------------------》");
         ErrorCode errorCode = ErrorCode.ERROR_CODE_SUCCESS;
         boolean isAdmin = requestSourceType == ProtoConstants.RequestSourceType.Request_From_Admin;
         if (message != null) {
